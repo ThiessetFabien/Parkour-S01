@@ -81,6 +81,11 @@ body {
     padding: 1rem;
 }
 
+.nav-item:hover {
+    background: #fc9b16;
+    transition: background-color 0.3s linear;
+}
+
 .nav-home {
     border-bottom: 0.2rem solid #fc9b16;
 }
@@ -212,6 +217,12 @@ body {
     font-size: 0.8rem;
     font-family: 'Asap', sans-serif;
     font-weight: 700;
+}
+
+.btn:hover {
+    background: #fc9b16;
+    color: #fff;
+    transition: background-color 0.3s linear;
 }
 
 .footer {
