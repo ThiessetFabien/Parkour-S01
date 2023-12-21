@@ -1,7 +1,7 @@
 /* asap-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Asap-regular';
+    font-family: 'Asap';
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/asap-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
@@ -9,7 +9,7 @@
 /* asap-700 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Asap-bold';
+    font-family: 'Asap';
     font-style: normal;
     font-weight: 700;
     src: url('../fonts/asap-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
@@ -17,7 +17,9 @@
 
 body {
     background:#eee;
-    font-family: 'Asap-regular', sans-serif;
+    font-family: 'Asap', sans-serif;
+    font-style: normal;
+    font-weight: 400;
 }
 
 * {
@@ -55,10 +57,10 @@ body {
 
 .title {
     font-size: 2em;
-    font-weight: bold;
+    font-family: 'Asap', sans-serif;
+    font-weight: 700;
     border-bottom:3px solid #f39c12;
     padding-bottom:1rem;
-    font-family: 'Asap-bold', sans-serif;
 }
 
 .nav {
@@ -94,7 +96,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    font-family: 'Asap-bold', sans-serif;
+    font-family: 'Asap', sans-serif;
 }
 
 .content-titles {
@@ -102,18 +104,20 @@ body {
     font-weight: 900;
     margin-right: 2rem;
     text-align: right;
+    width: 50%;
 }
 
 .content-title--main {
     border-top: 0.2rem solid #fc9b16;
     font-size: 2rem;
-    padding: 1rem 0;
+    padding: 1rem 0 0 4rem;
     text-shadow: 0.05rem 0.05rem #111;
 }
 
 .content-title--sub {
     color: #aaa;
     font-size: 1.8rem;
+    padding-left: 4rem;
     text-shadow: 0.05rem 0.05rem #aaa;
 }
 
@@ -149,7 +153,8 @@ body {
 
 .content h3 {
     font-size: 1.7em;
-    font-weight: bold;
+    font-family: 'Asap';
+    font-weight: 700;
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
@@ -178,17 +183,20 @@ body {
 }
 
 .card-title {
-    margin: 2rem 1rem;
-    font-size: 1.7em;
-    font-weight: bold;
+    margin: 1rem 1rem;
+    font-size: 1.2rem;
+    font-family: 'Asap';
+    font-weight: 700;
 }
 
 .card-content {
     padding: 0 1rem;
+    font-family: 'Asap', sans-serif;
+    font-size: 1rem;
 }
 
 .card-content p {
-    font-size: 1.1em;
+    font-size: 0.8rem;
     line-height: 1.5;
 }
 
@@ -197,8 +205,13 @@ body {
 }
 
 .btn {
+    border: 0.25rem solid #fc9b16;
+    border-radius: 2rem;
+    color: #fc9b16;
     padding: 1rem 2rem;
-    font-size: 1.2em;
+    font-size: 0.8rem;
+    font-family: 'Asap', sans-serif;
+    font-weight: 700;
 }
 
 .footer {
