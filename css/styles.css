@@ -5,15 +5,15 @@
     font-style: normal;
     font-weight: 400;
     src: url('../fonts/asap-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* asap-700 - latin */
-  @font-face {
+}
+/* asap-700 - latin */
+@font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Asap-bold';
     font-style: normal;
     font-weight: 700;
     src: url('../fonts/asap-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+}
 
 body {
     background:#eee;
@@ -89,7 +89,7 @@ body {
 
 .content-focus {
     border-bottom: 3px solid #ccc;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
@@ -99,8 +99,22 @@ body {
 
 .content-titles {
     width: 50%;
-    font-size: 3em;
+    font-weight: 900;
     margin-right: 2rem;
+    text-align: right;
+}
+
+.content-title--main {
+    border-top: 0.2rem solid #fc9b16;
+    font-size: 2rem;
+    padding: 1rem 0;
+    text-shadow: 0.05rem 0.05rem #111;
+}
+
+.content-title--sub {
+    color: #aaa;
+    font-size: 1.8rem;
+    text-shadow: 0.05rem 0.05rem #aaa;
 }
 
 .content-title {
@@ -191,77 +205,77 @@ body {
 }
 
 /*
-    Styles pour les écrans de moins de 1200px de large :
+Styles pour les écrans de moins de 1200px de large :
 */
 /*
 
-    .content-focus {
-        display:block;
-    }
+.content-focus {
+    display:block;
+}
 
-    .content-titles {
-        width: auto;
-        text-align: center;
-        margin-right: 0;
-    }
+.content-titles {
+    width: auto;
+    text-align: center;
+    margin-right: 0;
+}
 
-    .content-title {
-        max-width: none;
-    }
+.content-title {
+    max-width: none;
+}
 
-    .content-picture {
-        width: auto;
-    }
+.content-picture {
+    width: auto;
+}
 
-    .articles-container {
-      
-        display:block;
-    }
-    .card {
-        width:auto;
-    }
+.articles-container {
+    
+    display:block;
+}
+.card {
+    width:auto;
+}
 
 */
 
 /*
-    Styles pour les écrans de moins de 900px de large :
+Styles pour les écrans de moins de 900px de large :
 */
 /*
-    .header {
-        position:static;
-        width:auto;
-        float:none;
-        margin-left:0;
-    }
+.header {
+    position:static;
+    width:auto;
+    float:none;
+    margin-left:0;
+}
 
-    .container {
-        width:96%;
-        padding-left:0;
-    }
+.container {
+    width:96%;
+    padding-left:0;
+}
 
-    .page {
-        padding: 0 1rem;
-    }
+.page {
+    padding: 0 1rem;
+}
 
-    .nav {
-        padding: 1rem;
-    }
+.nav {
+    padding: 1rem;
+}
 
-    .nav .title {
-        display:none;
-    }
+.nav .title {
+    display:none;
+}
 
-    .nav-links {
-        margin-top:0;
-    }
+.nav-links {
+    margin-top:0;
+}
 
-    .nav-item {
-        width:calc(33.3333% - .5rem);
-        text-align: center;
-    }
+.nav-item {
+    width:calc(33.3333% - .5rem);
+    text-align: center;
+}
 
-    .nav-item-link {
-        margin-bottom: 0;
-    }
+.nav-item-link {
+    margin-bottom: 0;
+}
 
 */
