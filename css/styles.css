@@ -166,11 +166,15 @@ body {
 }
 
 .articles-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 2rem;
 }
 
 .card {
     margin-bottom: 2rem;
+    max-width: 49%;
 }
 
 .card-title {
